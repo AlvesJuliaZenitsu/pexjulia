@@ -1,3 +1,16 @@
+import Link from "next/link";
+
 export default function Estoque() {
-  return <p className="text-gray-500 dark:text-gray-400">Estoque</p>;
+  return (
+    <p>
+      <Link
+        href={{
+          pathname: "/about",
+          query: { name: "test" },
+        }}
+      >
+        About
+      </Link>
+    </p>
+  );
 }
